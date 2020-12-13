@@ -13,12 +13,9 @@ public class Main {
         subject1.register(observer1);
         subject1.register(observer2);
 
-        Status s1 = new Status("Status change 1");
-        subject1.notifyObservers(s1);
+        subject1.setMessage("Status change 1");
 
         subject1.unregister(observer1);
-
-        Status s2 = new Status("Status change 2");
-        subject1.notifyObservers(s2);
+        subject1.setMessage("Status change 2");
     }
 }

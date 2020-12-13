@@ -7,7 +7,7 @@ package observer;
 public class ConcreteObserver2 implements Observer {
 
     @Override
-    public void update(Status message) {
-        System.out.println("Observer 2 received message - "+message.getMessage());
+    public void update(String message) {
+        System.out.println("Observer 2 received message - "+message);
     }
 }

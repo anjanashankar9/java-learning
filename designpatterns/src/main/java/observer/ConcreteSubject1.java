@@ -10,9 +10,19 @@ import java.util.List;
 public class ConcreteSubject1 implements Subject{
 
     List<Observer> observers;
+    String message;
 
     public ConcreteSubject1() {
         this.observers = new ArrayList<>();
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+        this.notifyObservers();
     }
 
     @Override
@@ -26,9 +36,9 @@ public class ConcreteSubject1 implements Subject{
     }
 
     @Override
-    public void notifyObservers(Status s) {
+    public void notifyObservers() {
         for(Observer o : observers) {
-            o.update(s);
+            o.update(getMessage());
         }
     }
 }

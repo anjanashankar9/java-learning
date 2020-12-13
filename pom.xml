@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>java-concurrency</module>
+        <module>designpatterns</module>
     </modules>
 
     <build>

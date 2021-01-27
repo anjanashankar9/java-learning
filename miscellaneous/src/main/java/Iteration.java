@@ -26,8 +26,16 @@ public class Iteration {
         System.out.println("** ENHANCED FOR LOOP **");
         for(int i: numbers) {
             System.out.print(i+ " ");
+            numbers.remove(i);
         }
 
+        System.out.println();
+        for(int i: numbers) {
+            System.out.print(i+ " ");
+            if (i==3) {
+                i=30;
+            }
+        }
         System.out.println();
         System.out.println("** ITERATOR **");
 

@@ -4,10 +4,10 @@ package command;
  * @Author Anjana Shankar
  * @Created 2021-08-01
  */
-public class TVRemote {
+public class Remote {
     Device device;
 
-    public TVRemote() {
+    public Remote() {
         this.device = new Television();
     }
 

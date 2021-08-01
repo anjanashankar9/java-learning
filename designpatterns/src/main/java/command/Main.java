@@ -1,7 +1,5 @@
 package command;
 
-import decorator.*;
-
 /**
  * @Author Anjana Shankar
  * @Created 2021-08-01
@@ -9,9 +7,9 @@ import decorator.*;
 public class Main {
 
     public static void main(String[] args) {
-        TVRemote tvRemote = new TVRemote();
+        Remote remote = new Remote();
 
-        Device device = tvRemote.getDevice();
+        Device device = remote.getDevice();
 
         // Turn TV on
         Command cmd = new TurnTVOn(device);
